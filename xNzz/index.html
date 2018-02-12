@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <script src="js/jquery-1.12.3.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script>
+        $(function(){
+            var  uname= $.cookie("uname");
+            if  (uname!=""){
+                $('.top_left a:eq(0)').hide();
+                $('.top_left a:eq(1)').hide();
+                $('.top_left a:eq(2)').html("欢迎您,"+uname)
+            }
+        })
+
+    </script>
+</head>
+<body>
+<header>
+    <div id="top_all">
+        <div class="top">
+            <div class="top_left">
+                <h4>欢迎进入砖石小鸟官网</h4>
+                <a href="denglu.html">登录</a>
+                <a href="zuce.html">注册</a>
+                <a href="javascript:;" id="uname">注册</a>
+            </div>
+            <div class="top_right">
+                <a href="gwc.html">
+                    购物车
+                    <i>1</i>
+                    <!--<span></span>-->
+                </a>
+                <a href="javascript:;">
+                    我的订单
+                </a>
+                <a href="javascript:;">
+                    我的鸟巢
+                   <!-- <span></span>-->
+                </a>
+                <a href="javascript:;">
+                    砖石课堂
+                </a>
+                <a href="javascript:;">
+                    手机官网
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="header_bottom">
+        <div class="h_b">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>欢迎光临小鸟砖石网</h1>
+                </a>
+            </div>
+            <div class="logo_right">
+                <form>
+                    <input type="text" placeholder="戒托">
+                    <span id="Magnifier"></span>
+                </form>
+                <a href="#">来电预约</a>
+            </div>
+        </div>
+    </div>
+    <nav id="nav_wrap">
+        <div class="nav" style="position: relative">
+            <a id="index" href="index.html">首页</a>
+            <div class="nav_left" style="margin-left: 100px">
+                <a href="list.html">砖石</a>
+                <a href="javascript:;">婚介</a>
+                <a href="javascript:;">对戒</a>
+                <a href="javascript:;">婚事</a>
+                <a href="javascript:;">定制</a>
+                <a href="javascript:;">体验中心</a>
+            </div>
+            <div class="nav_right">
+                <a href="#">商务加盟</a>
+                <a href="#">品牌故事</a>
+                <a href="#">鸟巢论坛</a>
+            </div>
+        </div>
+        <!--隐藏菜单-->
+        <div class="hide">
+            <div class="menu_all">
+                <div class="menu">
+                    <div class="menu_left">
+                        <h3>大钻石</h3>
+                        <p>搜索全部钻石</p>
+                        <div class="menu_min_left">
+                            <a href="#">30分裸钻</a>
+                            <a href="#">30分裸钻</a>
+                            <a href="#">30分裸钻</a>
+                            <a href="#">30分裸钻</a>
+                            <a href="#">30分裸钻</a>
+                            <a href="#">30分裸钻</a>
+                            <a href="#">30分裸钻</a>
+                        </div>
+                        <div class="menu_min_right">
+                            <a href="#">圆形</a>
+                            <a href="#">圆形</a>
+                            <a href="#">圆形</a>
+                            <a href="#">圆形</a>
+                            <a href="#">圆形</a>
+                            <a href="#">圆形</a>
+                            <a href="#">圆形</a>
+                        </div>
+                    </div>
+                    <div class="menu_right">
+                        <div class="menu_min-left">
+                            <a href="#"> 定制一款钻戒</a>
+                            <a href="#"> 定制一款钻戒</a>
+                            <a href="#"> 定制一款钻戒</a>
+                            <a href="#"> 定制一款钻戒</a>
+                            <a href="#"> 定制一款钻戒</a>
+                            <a href="#"> 定制一款钻戒</a>
+                        </div>
+                        <div class="menu_min-right">
+                            <img src="images/meun_1.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu_all">
+                <div class="menu">
+                    <div class="menu_left">
+                        <h3>小钻石</h3>
+                        <p>搜索全部钻石</p>
+                        <div class="menu_min_left">
+                            <a href="#">30分裸钻</a>
+                            <a href="#">30分裸钻</a>
+                            <a href="#">30分裸钻</a>
+                            <a href="#">30分裸钻</a>
+                            <a href="#">30分裸钻</a>
+                            <a href="#">30分裸钻</a>
+                            <a href="#">30分裸钻</a>
+                        </div>
+                        <div class="menu_min_right">
+                            <a href="#">圆形</a>
+                            <a href="#">圆形</a>
+                            <a href="#">圆形</a>
+                            <a href="#">圆形</a>
+                            <a href="#">圆形</a>
+                            <a href="#">圆形</a>
+                            <a href="#">圆形</a>
+                        </div>
+                    </div>
+                    <div class="menu_right">
+                        <div class="menu_min-left">
+                            <a href="#"> 定制一款钻戒</a>
+                            <a href="#"> 定制一款钻戒</a>
+                            <a href="#"> 定制一款钻戒</a>
+                            <a href="#"> 定制一款钻戒</a>
+                            <a href="#"> 定制一款钻戒</a>
+                            <a href="#"> 定制一款钻戒</a>
+                        </div>
+                        <div class="menu_min-right">
+                            <img src="images/meun_2.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu_all">
+                <div class="menu">
+                    <div class="menu_left">
+                        <h3>中钻石</h3>
+                        <p>搜索全部钻石</p>
+                        <div class="menu_min_left">
+                            <a href="#">30分裸钻</a>
+                            <a href="#">30分裸钻</a>
+                            <a href="#">30分裸钻</a>
+                            <a href="#">30分裸钻</a>
+                            <a href="#">30分裸钻</a>
+                            <a href="#">30分裸钻</a>
+                            <a href="#">30分裸钻</a>
+                        </div>
+                        <div class="menu_min_right">
+                            <a href="#">圆形</a>
+                            <a href="#">圆形</a>
+                            <a href="#">圆形</a>
+                            <a href="#">圆形</a>
+                            <a href="#">圆形</a>
+                            <a href="#">圆形</a>
+                            <a href="#">圆形</a>
+                        </div>
+                    </div>
+                    <div class="menu_right">
+                        <div class="menu_min-left">
+                            <a href="#"> 定制一款钻戒</a>
+                            <a href="#"> 定制一款钻戒</a>
+                            <a href="#"> 定制一款钻戒</a>
+                            <a href="#"> 定制一款钻戒</a>
+                            <a href="#"> 定制一款钻戒</a>
+                            <a href="#"> 定制一款钻戒</a>
+                        </div>
+                        <div class="menu_min-right">
+                            <img src="images/meun_1.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu_all">
+                <div class="menu">
+                    <div class="menu_left">
+                        <h3>大钻石</h3>
+                        <p>搜索全部钻石</p>
+                        <div class="menu_min_left">
+                            <a href="#">30分裸钻</a>
+                            <a href="#">30分裸钻</a>
+                            <a href="#">30分裸钻</a>
+                            <a href="#">30分裸钻</a>
+                            <a href="#">30分裸钻</a>
+                            <a href="#">30分裸钻</a>
+                            <a href="#">30分裸钻</a>
+                        </div>
+                        <div class="menu_min_right">
+                            <a href="#">圆形</a>
+                            <a href="#">圆形</a>
+                            <a href="#">圆形</a>
+                            <a href="#">圆形</a>
+                            <a href="#">圆形</a>
+                            <a href="#">圆形</a>
+                            <a href="#">圆形</a>
+                        </div>
+                    </div>
+                    <div class="menu_right">
+                        <div class="menu_min-left">
+                            <a href="#"> 定制一款钻戒</a>
+                            <a href="#"> 定制一款钻戒</a>
+                            <a href="#"> 定制一款钻戒</a>
+                            <a href="#"> 定制一款钻戒</a>
+                            <a href="#"> 定制一款钻戒</a>
+                            <a href="#"> 定制一款钻戒</a>
+                        </div>
+                        <div class="menu_min-right">
+                            <img src="images/meun_2.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu_all">
+                <div class="menu">
+                    <div class="menu_left">
+                        <h3>大大钻石</h3>
+                        <p>搜索全部钻石</p>
+                        <div class="menu_min_left">
+                            <a href="#">30分裸钻</a>
+                            <a href="#">30分裸钻</a>
+                            <a href="#">30分裸钻</a>
+                            <a href="#">30分裸钻</a>
+                            <a href="#">30分裸钻</a>
+                            <a href="#">30分裸钻</a>
+                            <a href="#">30分裸钻</a>
+                        </div>
+                        <div class="menu_min_right">
+                            <a href="#">圆形</a>
+                            <a href="#">圆形</a>
+                            <a href="#">圆形</a>
+                            <a href="#">圆形</a>
+                            <a href="#">圆形</a>
+                            <a href="#">圆形</a>
+                            <a href="#">圆形</a>
+                        </div>
+                    </div>
+                    <div class="menu_right">
+                        <div class="menu_min-left">
+                            <a href="#"> 定制一款钻戒</a>
+                            <a href="#"> 定制一款钻戒</a>
+                            <a href="#"> 定制一款钻戒</a>
+                            <a href="#"> 定制一款钻戒</a>
+                            <a href="#"> 定制一款钻戒</a>
+                            <a href="#"> 定制一款钻戒</a>
+                        </div>
+                        <div class="menu_min-right">
+                            <img src="images/meun_1.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu_all">
+                <div class="menu">
+                    <div class="menu_left">
+                        <h3>钻石</h3>
+                        <p>搜索全部钻石</p>
+                        <div class="menu_min_left">
+                            <a href="#">30分裸钻</a>
+                            <a href="#">30分裸钻</a>
+                            <a href="#">30分裸钻</a>
+                            <a href="#">30分裸钻</a>
+                            <a href="#">30分裸钻</a>
+                            <a href="#">30分裸钻</a>
+                            <a href="#">30分裸钻</a>
+                        </div>
+                        <div class="menu_min_right">
+                            <a href="#">圆形</a>
+                            <a href="#">圆形</a>
+                            <a href="#">圆形</a>
+                            <a href="#">圆形</a>
+                            <a href="#">圆形</a>
+                            <a href="#">圆形</a>
+                            <a href="#">圆形</a>
+                        </div>
+                    </div>
+                    <div class="menu_right">
+                        <div class="menu_min-left">
+                            <a href="#"> 定制一款钻戒</a>
+                            <a href="#"> 定制一款钻戒</a>
+                            <a href="#"> 定制一款钻戒</a>
+                            <a href="#"> 定制一款钻戒</a>
+                            <a href="#"> 定制一款钻戒</a>
+                            <a href="#"> 定制一款钻戒</a>
+                        </div>
+                        <div class="menu_min-right">
+                            <img src="images/meun_2.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="banner">
+
+        <ul class="list001 clear">
+            <!--<li><img src="images/banner1.jpg"></li>
+            <li><img src="images/banner2.jpg"></li>
+            <li><img src="images/banner3.jpg"></li>
+            <li><img src="images/banner4.jpg"></li>
+            <li><img src="images/banner5.jpg"></li>-->
+        </ul>
+
+        <ul class="list002">
+            <!--<li></li>
+            <li></li> 
+            <li></li> 
+            <li></li>
+            <li></li>-->
+
+        </ul>
+        <div class="next"></div>
+        <div class="prev"></div>
+    </div>
+</header>
+<div id="center">
+    <!--banner以下的图片-->
+    <div class="center_1 ">
+        <div class="c_l">
+            <h3>设计订婚戒指</h3>
+            <div class="show_all">
+                <ul class="show1" >
+                    <li><img src="images/diy_1.jpg"></li>
+                    <li><img src="images/diy_2.jpg"></li>
+                    <li><img src="images/diy_3.jpg"></li>
+                </ul>
+            </div>
+            <a href="#">从挑选钻戒开始</a>
+            <a href="#">从挑选款式开始</a>
+        </div>
+        <div class="c_r"></div>
+    </div>
+    <!--产品系列-->
+    <div class="center_2 ">
+        <h3>系列产品</h3>
+        <!--产品系列导航-->
+        <div class="goods_nav">
+            <ul>
+                <li style="color: #000;">推荐</li>
+                <li>砖石</li>
+                <li>婚戒</li>
+                <li>对戒</li>
+                <li>配饰</li>
+            </ul>
+            <div class="bosa">
+                <div class="goods_nav_tab " style="display: block;">
+               <span>
+               <a href="#">
+                   <img src="images/tab1_1.jpg">
+               </a>
+               <a href="#">
+                   <img src="images/tab1_2.jpg">
+               </a>
+              </span>
+                    <a href="#" style="display: block; float: right">
+                        <img src="images/tab1_3.jpg">
+                    </a>
+                </div>
+                <div class="goods_nav_tab">
+               <span>
+               <a href="#">
+                   <img src="images/tab2_1.jpg">
+               </a>
+               <a href="#">
+                   <img src="images/tab2_2.jpg">
+               </a>
+              </span>
+                    <a href="#" style="display: block; float: right">
+                        <img src="images/tab2_3.jpg">
+                    </a>
+                </div>
+                <div class="goods_nav_tab">
+               <span>
+               <a href="#">
+                   <img src="images/tab1_1.jpg">
+               </a>
+               <a href="#">
+                   <img src="images/tab1_2.jpg">
+               </a>
+              </span>
+                    <a href="#" style="display: block; float: right">
+                        <img src="images/tab1_3.jpg">
+                    </a>
+                </div>
+                <div class="goods_nav_tab">
+               <span>
+               <a href="#">
+                   <img src="images/tab2_1.jpg">
+               </a>
+               <a href="#">
+                   <img src="images/tab2_2.jpg">
+               </a>
+              </span>
+                    <a href="#" style="display: block; float: right">
+                        <img src="images/tab2_3.jpg">
+                    </a>
+                </div>
+                <div class="goods_nav_tab">
+               <span>
+               <a href="#">
+                   <img src="images/tab1_1.jpg">
+               </a>
+               <a href="#">
+                   <img src="images/tab1_2.jpg">
+               </a>
+              </span>
+                    <a href="#" style="display: block; float: right">
+                        <img src="images/tab1_3.jpg">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="center_3">
+        <h3>婚戒推荐<i></i>全球美钻</h3>
+        <div class="m_banner">
+            <div class="min_banner">
+                <ul>
+                    <li><img src="images/ban_1.jpg"></li>
+                    <li><img src="images/ban_2.jpg"></li>
+                    <li><img src="images/ban_3.jpg"></li>
+                    <li><img src="images/ban_1.jpg"></li>
+                    <li><img src="images/ban_2.jpg"></li>
+                    <li><img src="images/ban_3.jpg"></li>
+                </ul>
+                <div class="z"></div>
+                <div class="y"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--鼠标经过切换图片-->
+<div id="s_h">
+    <div class="s_h_show">
+        <a href="#">
+            <i></i>
+            <span>Round</span>
+        </a>
+        <a href="#">
+            <i></i>
+            <span>Round</span>
+        </a>
+        <a href="#">
+            <i></i>
+            <span>Round</span>
+        </a>
+        <a href="#">
+            <i></i>
+            <span>Round</span>
+        </a>
+        <a href="#">
+            <i></i>
+            <span>Round</span>
+        </a>
+        <a href="#">
+            <i></i>
+            <span>Round</span>
+        </a>
+        <a href="#">
+            <i></i>
+            <span>Round</span>
+        </a>
+        <a href="#">
+            <i></i>
+            <span>Round</span>
+        </a>
+        <a href="#">
+            <i></i>
+            <span>Round</span>
+        </a>
+        <a href="#">
+            <i></i>
+            <span>Round</span>
+        </a>
+    </div>
+</div>
+<!--品牌故事-->
+<div id="Story_wrap">
+    <div class="Story">
+        <a href="#"><img src="images/g_1.jpg"></a>
+        <a href="#"><img src="images/g_2.jpg"></a>
+        <a href="#"><img src="images/g_3.jpg"></a>
+    </div>
+</div>
+<!--鼠标经过有切换-->
+<div id="tab_qh_wrap">
+    <div class="title_qh">
+        <p class="_qh_max">
+            <a href="javascript:;">北京</a> <span> / </span>
+            <a href="javascript:;">上海</a> <span> / </span>
+            <a href="javascript:;">杭州</a> <span> / </span>
+            <a href="javascript:;">广州</a> <span> / </span>
+            <a href="javascript:;">武汉</a> <span> / </span>
+            <a href="javascript:;">郑州</a> <span> / </span>
+            <a href="javascript:;">天津</a> <span> / </span>
+            <a href="javascript:;">西安</a> <span> / </span>
+            <a href="javascript:;">北京</a> <span> / </span>
+            <a href="javascript:;">上海</a> <span> / </span>
+            <a href="javascript:;">杭州</a> <span> / </span>
+            <a href="javascript:;">广州</a> <span> / </span>
+            <a href="javascript:;">武汉</a> <span> / </span>
+            <a href="javascript:;">郑州</a> <span> / </span>
+            <a href="javascript:;">吉林</a> <span> / </span>
+            <a href="javascript:;">常州</a> <span> / </span>
+            <a href="javascript:;">盐城金鹰</a> <span> / </span>
+            <a href="javascript:;">丽水</a> <span> / </span>
+            <a href="javascript:;">宿迁</a> <span> / </span>
+            <a href="javascript:;">苏州</a> <span> / </span>
+            <a href="javascript:;">烟台</a> <span> / </span>
+            <a href="javascript:;">南昌</a> <span> / </span>
+            <a href="javascript:;">义务</a> <span> / </span>
+            <a href="javascript:;">蚌埠</a> <span> / </span>
+            <a href="javascript:;">临沂</a> <span> / </span>
+            <a href="javascript:;">长沙万达</a> <span> / </span>
+
+        </p>
+    </div>
+    <div class="tab_qh_button">
+        <!--体验店轮播-->
+        <div class="ES se">
+            <ul class="list_1_banner clear">
+                <li><img src="images/st_1.jpg"></li>
+                <li><img src="images/st_2.jpg"></li>
+                <li><img src="images/st_3.jpg"></li>
+                <li><img src="images/st_4.jpg"></li>
+            </ul>
+            <!--<ul class="list_1_act">-->
+                <!--<li class="li_act"></li>-->
+                <!--<li></li>-->
+                <!--<li></li>-->
+                <!--<li></li>-->
+            <!--</ul>-->
+        </div>
+        <div class="ty_core">
+            <div class="ty_center_wrap">
+                <div class="ty_center" style="display: block">
+                    <h3>北京体验店</h3>
+                    <i></i>
+                    <p>王府井大街138号新东安T2办公楼7层</p>
+                    <p>周一~周五10:30~20:00 周六~周日10:00~20:30</p>
+                    <p>咨询电话 010-85186550</p>
+                </div>
+                <div class="ty_center">
+                    <h3>上海体验店</h3>
+                    <i></i>
+                    <p>王府井大街138号新东安T2办公楼7层</p>
+                    <p>周一~周五10:30~20:00 周六~周日10:00~20:30</p>
+                    <p>咨询电话 010-85186550</p>
+                </div>
+                <div class="ty_center">
+                    <h3>杭州体验店</h3>
+                    <i></i>
+                    <p>王府井大街138号新东安T2办公楼7层</p>
+                    <p>周一~周五10:30~20:00 周六~周日10:00~20:30</p>
+                    <p>咨询电话 010-85186550</p>
+                </div>
+                <div class="ty_center">
+                    <h3>广州体验店</h3>
+                    <i></i>
+                    <p>王府井大街138号新东安T2办公楼7层</p>
+                    <p>周一~周五10:30~20:00 周六~周日10:00~20:30</p>
+                    <p>咨询电话 010-85186550</p>
+                </div>
+                <div class="ty_center">
+                    <h3>武汉体验店</h3>
+                    <i></i>
+                    <p>王府井大街138号新东安T2办公楼7层</p>
+                    <p>周一~周五10:30~20:00 周六~周日10:00~20:30</p>
+                    <p>咨询电话 010-85186550</p>
+                </div>
+                <div class="ty_center">
+                    <h3>郑州体验店</h3>
+                    <i></i>
+                    <p>王府井大街138号新东安T2办公楼7层</p>
+                    <p>周一~周五10:30~20:00 周六~周日10:00~20:30</p>
+                    <p>咨询电话 010-85186550</p>
+                </div>
+                <div class="ty_center">
+                    <h3>天津体验店</h3>
+                    <i></i>
+                    <p>王府井大街138号新东安T2办公楼7层</p>
+                    <p>周一~周五10:30~20:00 周六~周日10:00~20:30</p>
+                    <p>咨询电话 010-85186550</p>
+                </div>
+                <div class="ty_center">
+                    <h3>西安体验店</h3>
+                    <i></i>
+                    <p>王府井大街138号新东安T2办公楼7层</p>
+                    <p>周一~周五10:30~20:00 周六~周日10:00~20:30</p>
+                    <p>咨询电话 010-85186550</p>
+                </div>
+                <div class="ty_center">
+                    <h3>北京体验店</h3>
+                    <i></i>
+                    <p>王府井大街138号新东安T2办公楼7层</p>
+                    <p>周一~周五10:30~20:00 周六~周日10:00~20:30</p>
+                    <p>咨询电话 010-85186550</p>
+                </div>
+                <div class="ty_center">
+                    <h3>上海体验店</h3>
+                    <i></i>
+                    <p>王府井大街138号新东安T2办公楼7层</p>
+                    <p>周一~周五10:30~20:00 周六~周日10:00~20:30</p>
+                    <p>咨询电话 010-85186550</p>
+                </div>
+                <div class="ty_center">
+                    <h3>杭州体验店</h3>
+                    <i></i>
+                    <p>王府井大街138号新东安T2办公楼7层</p>
+                    <p>周一~周五10:30~20:00 周六~周日10:00~20:30</p>
+                    <p>咨询电话 010-85186550</p>
+                </div>
+                <div class="ty_center">
+                    <h3>广州体验店</h3>
+                    <i></i>
+                    <p>王府井大街138号新东安T2办公楼7层</p>
+                    <p>周一~周五10:30~20:00 周六~周日10:00~20:30</p>
+                    <p>咨询电话 010-85186550</p>
+                </div>
+                <div class="ty_center">
+                    <h3>武汉体验店</h3>
+                    <i></i>
+                    <p>王府井大街138号新东安T2办公楼7层</p>
+                    <p>周一~周五10:30~20:00 周六~周日10:00~20:30</p>
+                    <p>咨询电话 010-85186550</p>
+                </div>
+                <div class="ty_center">
+                    <h3>郑州体验店</h3>
+                    <i></i>
+                    <p>王府井大街138号新东安T2办公楼7层</p>
+                    <p>周一~周五10:30~20:00 周六~周日10:00~20:30</p>
+                    <p>咨询电话 010-85186550</p>
+                </div>
+                <div class="ty_center">
+                    <h3>天津体验店</h3>
+                    <i></i>
+                    <p>王府井大街138号新东安T2办公楼7层</p>
+                    <p>周一~周五10:30~20:00 周六~周日10:00~20:30</p>
+                    <p>咨询电话 010-85186550</p>
+                </div>
+                <div class="ty_center">
+                    <h3>西安体验店</h3>
+                    <i></i>
+                    <p>王府井大街138号新东安T2办公楼7层</p>
+                    <p>周一~周五10:30~20:00 周六~周日10:00~20:30</p>
+                    <p>咨询电话 010-85186550</p>
+                </div>
+                <div class="ty_center">
+                    <h3>北京体验店</h3>
+                    <i></i>
+                    <p>王府井大街138号新东安T2办公楼7层</p>
+                    <p>周一~周五10:30~20:00 周六~周日10:00~20:30</p>
+                    <p>咨询电话 010-85186550</p>
+                </div>
+                <div class="ty_center">
+                    <h3>上海体验店</h3>
+                    <i></i>
+                    <p>王府井大街138号新东安T2办公楼7层</p>
+                    <p>周一~周五10:30~20:00 周六~周日10:00~20:30</p>
+                    <p>咨询电话 010-85186550</p>
+                </div>
+                <div class="ty_center">
+                    <h3>杭州体验店</h3>
+                    <i></i>
+                    <p>王府井大街138号新东安T2办公楼7层</p>
+                    <p>周一~周五10:30~20:00 周六~周日10:00~20:30</p>
+                    <p>咨询电话 010-85186550</p>
+                </div>
+                <div class="ty_center">
+                    <h3>广州体验店</h3>
+                    <i></i>
+                    <p>王府井大街138号新东安T2办公楼7层</p>
+                    <p>周一~周五10:30~20:00 周六~周日10:00~20:30</p>
+                    <p>咨询电话 010-85186550</p>
+                </div>
+                <div class="ty_center">
+                    <h3>武汉体验店</h3>
+                    <i></i>
+                    <p>王府井大街138号新东安T2办公楼7层</p>
+                    <p>周一~周五10:30~20:00 周六~周日10:00~20:30</p>
+                    <p>咨询电话 010-85186550</p>
+                </div>
+                <div class="ty_center">
+                    <h3>郑州体验店</h3>
+                    <i></i>
+                    <p>王府井大街138号新东安T2办公楼7层</p>
+                    <p>周一~周五10:30~20:00 周六~周日10:00~20:30</p>
+                    <p>咨询电话 010-85186550</p>
+                </div>
+                <div class="ty_center">
+                    <h3>天津体验店</h3>
+                    <i></i>
+                    <p>王府井大街138号新东安T2办公楼7层</p>
+                    <p>周一~周五10:30~20:00 周六~周日10:00~20:30</p>
+                    <p>咨询电话 010-85186550</p>
+                </div>
+                <div class="ty_center">
+                    <h3>西安体验店</h3>
+                    <i></i>
+                    <p>王府井大街138号新东安T2办公楼7层</p>
+                    <p>周一~周五10:30~20:00 周六~周日10:00~20:30</p>
+                    <p>咨询电话 010-85186550</p>
+                </div>
+                <div class="ty_center">
+                    <h3>天津体验店</h3>
+                    <i></i>
+                    <p>王府井大街138号新东安T2办公楼7层</p>
+                    <p>周一~周五10:30~20:00 周六~周日10:00~20:30</p>
+                    <p>咨询电话 010-85186550</p>
+                </div>
+                <div class="ty_center">
+                    <h3>西安体验店</h3>
+                    <i></i>
+                    <p>王府井大街138号新东安T2办公楼7层</p>
+                    <p>周一~周五10:30~20:00 周六~周日10:00~20:30</p>
+                    <p>咨询电话 010-85186550</p>
+                </div>
+            </div>
+            <form>
+                <input type="text" class="input_fs" placeholder="免费发送地址到手机">
+                <a class="fs" href="javascript:;">发送</a>
+            </form>
+            <a href="#">在线预约进店</a>
+        </div>
+    </div>
+</div>
+<div id="new_wrap">
+    <div class="new_left">
+        <div class="n_l">
+            <h3>资讯动态</h3>
+            <ul>
+                <li>
+                    <a href="#">钻石小鸟高校巡礼季 谱写闪耀的青春纪...</a>
+                </li>
+                <li>
+                    <a href="#">钻石小鸟携手上海首饰设计协会 闪耀珠...</a>
+                </li>
+                <li>
+                    <a href="#">钻石小鸟高校巡礼季 谱写闪耀的青春纪...</a>
+                </li>
+                <li>
+                    <a href="#">钻石小鸟携手上海首饰设计协会 闪耀珠...</a>
+                </li>
+                <li>
+                    <a href="#">钻石小鸟高校巡礼季 谱写闪耀的青春纪...</a>
+                </li>
+                <li>
+                    <a href="#">钻石小鸟携手上海首饰设计协会 闪耀珠...</a>
+                </li>
+            </ul>
+            <a href="#">查看全部</a>
+
+        </div>
+        <div class="n_l">
+            <h3>钻石课堂</h3>
+            <ul>
+                <li><a href="#">买铂金戒指对戒</a></li>
+                <li><a href="#">钻石定制戒指多少钱</a></li>
+                <li><a href="#">买铂金戒指对戒</a></li>
+                <li><a href="#">钻石定制戒指多少钱</a></li>
+                <li><a href="#">买铂金戒指对戒</a></li>
+                <li><a href="#">钻石定制戒指多少钱</a></li>
+            </ul>
+            <a href="#">查看全部</a>
+        </div>
+    </div>
+    <div class="new_right">
+        <div class="ES new_img">
+            <ul class="list_1 clear new_img">
+                <li><img src="images/ad_01.jpg"></li>
+                <li><img src="images/ad_02.jpg"></li>
+
+            </ul>
+            <ul class="list_2">
+                <li class="li_act"></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--底部-->
+<!--f_b_c 是footer bottom center的缩写 -->
+<div id="footer_wrap">
+    <div class="footer">
+        <div class="footer_top">
+            <ul class="clear">
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_buttom">
+            <div class="f_b_l">
+                <div class="f_logo">
+                    <a href="#"></a>
+                </div>
+                <div class="f_b_c">
+                    <div class="f_b_c_top">
+                        <span>关于我们</span>
+                        <span>购物指南</span>
+                        <span>支付方式</span>
+                        <span>配送方式</span>
+                        <span>售后服务</span>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">品牌简介</a>
+                        </li>
+                        <li>
+                            <a href="#">市场合作</a>
+                        </li>
+                        <li>
+                            <a href="#">品牌简介</a>
+                        </li>
+                        <li>
+                            <a href="#">市场合作</a>
+                        </li>
+                        <li>
+                            <a href="#">品牌简介</a>
+                        </li>
+
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#">品牌简介</a>
+                        </li>
+                        <li>
+                            <a href="#">市场合作</a>
+                        </li>
+                        <li>
+                            <a href="#">品牌简介</a>
+                        </li>
+                        <li>
+                            <a href="#">市场合作</a>
+                        </li>
+                        <li>
+                            <a href="#">品牌简介</a>
+                        </li>
+
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#">品牌简介</a>
+                        </li>
+                        <li>
+                            <a href="#">市场合作</a>
+                        </li>
+                        <li>
+                            <a href="#">品牌简介</a>
+                        </li>
+                        <li>
+                            <a href="#">市场合作</a>
+                        </li>
+                        <li>
+                            <a href="#">品牌简介</a>
+                        </li>
+
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#">品牌简介</a>
+                        </li>
+                        <li>
+                            <a href="#">市场合作</a>
+                        </li>
+                        <li>
+                            <a href="#">品牌简介</a>
+                        </li>
+                        <li>
+                            <a href="#">市场合作</a>
+                        </li>
+                        <li>
+                            <a href="#">品牌简介</a>
+                        </li>
+
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#">品牌简介</a>
+                        </li>
+                        <li>
+                            <a href="#">市场合作</a>
+                        </li>
+                        <li>
+                            <a href="#">品牌简介</a>
+                        </li>
+                        <li>
+                            <a href="#">市场合作</a>
+                        </li>
+                        <li>
+                            <a href="#">品牌简介</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="f_b_r">
+
+                </div>
+            </div>
+            <div class="f_tel">
+                <a href="#"></a>
+            </div>
+            <div class="script_1">
+                <a href="#">网站地图</a>&nbsp;<i>|</i>&nbsp;&nbsp;
+                <a href="#">友情链接</a>&nbsp;<i>|</i>&nbsp;&nbsp;
+                <a href="#">网站地图</a>&nbsp;<i>|</i>&nbsp;&nbsp;
+                <a href="#">友情链接</a>&nbsp;<i>|</i>&nbsp;&nbsp;
+                <a href="#">网站地图</a>&nbsp;<i>|</i>&nbsp;&nbsp;
+                <a href="#">友情链接</a>&nbsp;<i>|</i>&nbsp;&nbsp;
+                <a href="#">网站地图</a>&nbsp;<i>|</i>&nbsp;&nbsp;
+                <a href="#">友情链接</a>
+            </div>
+            <div class="script_1">
+                <span>上海铂利德钻石有限公司     021-26011188</span>
+            </div>
+            <div class="script_gd">
+                <div class="gd002">
+                    <p class="g_d">
+                        <a href="#">手表品牌排行榜 | </a>
+                        <a href="#"> 品牌排行榜 |</a>
+                        <a href="#">招商加盟 |</a>
+                        <a href="#"> 杂志订阅 |</a>
+                        <a href="#"> 童装加盟 |</a>
+                        <a href="#">中国品牌网 |</a>
+                        <a href="#">招商加盟 |</a>
+                        <a href="#"> 杂志订阅 |</a>
+                        <a href="#"> 童装加盟 |</a>
+                        <a href="#">中国品牌网 |</a>
+                    </p>
+                    <p class="g_d">
+                        <a href="#"> 杂志订阅 |</a>
+                        <a href="#"> 童装加盟 |</a>
+                        <a href="#">中国品牌网 |</a>
+                        <a href="#"> 童装加盟 |</a>
+                        <a href="#">中国品牌网 |</a>
+                        <a href="#">招商加盟 |</a>
+                        <a href="#">手表品牌排行榜 | </a>
+                        <a href="#"> 品牌排行榜 |</a>
+                        <a href="#">招商加盟 |</a>
+                        <a href="#"> 杂志订阅 |</a>
+                    </p>
+                    <p class="g_d">
+                        <a href="#">招商加盟 |</a>
+                        <a href="#"> 杂志订阅 |</a>
+                        <a href="#"> 童装加盟 |</a>
+                        <a href="#">中国品牌网 |</a>
+                        <a href="#"> 杂志订阅 |</a>
+                        <a href="#"> 童装加盟 |</a>
+                        <a href="#">招商加盟 |</a>
+                        <a href="#">手表品牌排行榜 | </a>
+                        <a href="#"> 品牌排行榜 |</a>
+                        <a href="#">中国品牌网 |</a>
+                    </p>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<div id="flex">
+    <ul>
+        <li><img src="images/1.gif"></li>
+        <li><img src="images/2.jpg"></li>
+        <li><img src="images/3.jpg"></li>
+        <li><img src="images/4.jpg"></li>
+        <li id="ewm_pro"><img  src="images/5.jpg" alt=""></li>
+    </ul>
+    <div class="ewm">
+        <img src="images/code_wechat.jpg">
+    </div>
+</div>
+<div id="crl_topo">
+</div>
+
+</body>
+</html>

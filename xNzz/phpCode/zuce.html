@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="js/jquery-1.12.3.js"></script>
+    <script>
+        $(function(){
+            //注册借口  http://localhost/QF/javascript/day31/zuce.php"
+
+
+            $("input").eq(3).click(function(){
+                $.ajax({
+                    type:"post",
+                    url:"  http://localhost/QF/javascript/day31/zuce.php",//接口
+                    data:{//参数
+                        "uname":$("input").eq(0).val(),//第一个input的value的值
+                        "pwd":$("input").eq(1).val(),//第二个input的value的值
+                        "age":$("input").eq(2).val()//第三个input的value的值
+                    },
+                    //需要些success 才可以接收到成功或者失败发返回值
+                    success:function(data){//如果成功就打印这里面的值
+                        console.log(data)
+                    },error:function(){//如果失败就打印这 请求失败
+                        console.log("请求失败")
+                    }
+
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+<h2>注册</h2>
+<form>
+    <input type="text" placeholder="用户名" /> <br />
+    <input type="password" placeholder="密码" /> <br />
+    <input type="text" placeholder="年龄" /> <br />
+    <input type="button" value="注册" />
+</form>
+</body>
+</html>

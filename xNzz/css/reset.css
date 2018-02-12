@@ -1,0 +1,96 @@
+/* 清除内外边距 */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+fieldset, legend, button, input, textarea, /* form elements 表单元素 */
+th, td { /* table elements 表格元素 */
+    margin: 0;
+    padding: 0;
+}
+iframe{ border: none}
+ul, ol {
+    list-style: none;
+}
+
+/* 重置文本格式元素 */
+a {
+    text-decoration: none;
+}
+
+/*a:hover {*/
+    /*text-decoration: underline;*/
+/*}*/
+
+img {
+    border: none;
+}
+
+/* img 搭车：让链接里的 img 无边框 */
+
+button, input, select, textarea {
+    font-size: 100%; /*使得表单元素在 ie 下能继承字体大小 */
+}
+
+hr {
+    border: none;
+    height: 1px;
+}
+
+/* 重置表格元素 */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+h1 {
+    font-size: 18px; /* 18px / 12px = 1.5 */
+}
+
+h2 {
+    font-size: 16px;
+}
+
+h3 {
+    font-size: 14px;
+}
+
+h4, h5, h6 {
+    font-size: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, b, i, em, strong {
+    font-style: normal;
+    font-weight: 100
+}
+
+body, html {
+    height: 100%;
+    background: #fff;
+
+
+    font-family: "microsoft yahei;"
+}
+
+input {
+    outline: none;
+
+}
+
+
+
+/*以下不是默认重置代码*/
+/*万能清楚浮动（塌陷）*/
+.clear:after{
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+
+
+
+
+
